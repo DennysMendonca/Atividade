@@ -46,7 +46,7 @@ formulario.addEventListener("submit", function(evento) {
         const sorteado = Math.floor(Math.random() * total) + 1;
 
         // 3. Alerta (O que você pediu)
-        alert("🗳️ O aluno sorteado foi o número: " + sorteado);
+        alert("🎉 O aluno sorteado foi o número: " + sorteado);
 
         // 4. Mudando a cor de alguma coisa (Aula 4)
         body.style.backgroundColor = "#FFC107"; // Muda o fundo para amarelo
