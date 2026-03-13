@@ -1,23 +1,19 @@
-// Seleciona o formulário e escuta o evento de "submit" (envio)
 const formulario = document.getElementById('meuForm');
 
-formulario.addEventListener('submit', function(event) {
-    // Impede a página de recarregar
-    event.preventDefault();
+if (formulario) {
+    formulario.addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o recarregamento da página
 
-    // Pega o valor digitado no input
-    const quantidadeAlunos = document.getElementById('quantidade').value;
+        const inputQuantidade = document.getElementById('quantidade');
+        const quantidade = parseInt(inputQuantidade.value);
 
-    // Converte para número e valida se é maior que zero
-    const total = parseInt(quantidadeAlunos);
-
-    if (total > 0) {
-        // Gera um número aleatório entre 1 e o total de alunos
-        const numeroSorteado = Math.floor(Math.random() * total) + 1;
-
-        // Exibe o resultado
-        alert("O número sorteado foi: " + numeroSorteado + "! 🎉");
-    } else {
-        alert("Por favor, insira um número válido de alunos.");
-    }
-});
+        if (quantidade > 0) {
+            const resultado = Math.floor(Math.random() * quantidade) + 1;
+            alert("O número sorteado é: " + resultado);
+        } else {
+            alert("Por favor, digite um número de alunos válido.");
+        }
+    });
+} else {
+    console.error("Formulário não encontrado! Verifique se o ID no HTML é 'meuForm'");
+}
