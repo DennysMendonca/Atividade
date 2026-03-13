@@ -12,8 +12,11 @@ if (formulario) {
             alert("🎊O aluno sorteado foi: " + resultado);
         } else {
             alert("Por favor, digite um número de alunos válido.");
+
+        body.style.backgroudColor = "#FFC107";
+        document.getElementById("cabecalho").style.backgroudColor = "#333";
         }
-    });
+    }};
 } else {
     console.error("Formulário não encontrado! Verifique se o ID no HTML é 'meuForm'");
 }
