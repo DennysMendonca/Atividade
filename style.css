@@ -15,73 +15,76 @@ body {
     height: 100vh;
 }
 
-/* Cabeçalho */
-#cabecalho h1 {
-    color: #333;
-    margin-bottom: 20px;
-}
-
 header {
-    background-color: blue;
+    background-color: rgb(0, 145, 255);
     color: white;
     width: 100%;
     padding: 20px;
     text-align: center;
 }
 
+
+/* Cabeçalho */
+/*#cabecalho h1 {
+    color: #333;
+    margin-bottom: 20px;
+}*/
+
+
+
 /* O Cartão (Card) */
 .cartao {
     background-color: rgb(255, 255, 255);
     padding: 30px;
-    border-radius: 12px;
+    margin-top: 50px;
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    
 }
 
-.cartao h2 {
+/*.cartao h2 {
     color: #444;
     font-size: 1.2rem;
     margin-bottom: 20px;
-}
+}*/
 
 /* Formulário e Inputs */
-#meuForm {
+/*#meuForm {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
+}*/
 
-label {
+/*label {
     font-size: 0.9rem;
     color: #666;
     text-align: left;
-}
+}*/
 
 input {
+    display: block;
+    width: 100%;
     padding: 10px;
+    margin: 15px 0;
+}
+    /*padding: 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
     outline: none;
     transition: border-color 0.3s;
-}
+}*/
 
-input:focus {
+/*input:focus {
     border-color: #007bff;
-}
+}*/
 
 /* Botão */
 button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 12px;
-    border-radius: 6px;
+    padding: 10px 20px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-button:hover {
-    background-color: #0056b3;
-}
