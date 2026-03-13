@@ -9,7 +9,7 @@ if (formulario) {
 
         if (quantidade > 0) {
             const resultado = Math.floor(Math.random() * quantidade) + 1;
-            alert("O número sorteado é: " + resultado);
+            alert("🎊O aluno sorteado foi: " + resultado);
         } else {
             alert("Por favor, digite um número de alunos válido.");
         }
