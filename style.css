@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Configurações Gerais */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,13 +13,20 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
 }
 
 /* Cabeçalho */
 #cabecalho h1 {
     color: #333;
     margin-bottom: 20px;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
 }
 
 /* O Cartão (Card) */
